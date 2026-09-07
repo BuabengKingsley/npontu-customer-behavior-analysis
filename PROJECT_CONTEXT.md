@@ -136,7 +136,19 @@ customers, GHS 51,346.91 combined historical spend.
 - Big data tool component + justification (Kafka/Elasticsearch/Grafana)
 - Visualizations
 - Written report/presentation
-- GitHub repo link inside a PDF document (per Npontu's submission instructions)
+
+## Submission Instructions (verbatim from the assignment sheet, corrected 2026-09-07 -
+## an earlier version of this file incorrectly said "PDF with repo link"; that was wrong,
+## not something the actual assignment sheet says - do not reintroduce it)
+- Submit the analysis as a Jupyter notebook or similar interactive format
+- Include any scripts, command-line commands, or external files used in the analysis
+- Ensure code is well-commented and organized for review
+No PDF or GitHub-link-in-PDF requirement exists. The GitHub repo itself (notebooks + scripts +
+CSVs + README, all well-commented and organized) already satisfies this - submission is likely
+just sending the repo link or a zip of it, not a separate document-conversion step. Kingsley
+still wants a written report/presentation for the "Documentation and Presentation" content
+requirement (being built separately via Claude chat, as of 2026-09-07) - that's a different
+thing from the submission FORMAT covered here.
 
 ## Key Decisions Already Made
 - Model type: Supervised learning, classification (churn prediction chosen over recommendations/forecasting)
@@ -180,6 +192,8 @@ recreate it) and wait ~30-60s for ES to accept connections before re-running the
 ## Next Immediate Step
 Phases 1-4 are DONE (data generation, EDA/cleaning, feature engineering, modeling, explainability,
 business insights, big data tool - all in analysis.ipynb + elasticsearch_demo.ipynb, both execute
-cleanly with zero errors). Move to Phase 5: write the report/presentation (should foreground the
-two-round leakage story above as the main analytical-rigor narrative, not bury it), push to
-GitHub, and produce the final PDF with the repo link per Npontu's submission instructions.
+cleanly with zero errors, pushed to GitHub with README + requirements.txt). All technical/analytical
+work is complete. Remaining: Kingsley is building the written report/presentation himself via
+Claude chat (should foreground the two-round leakage story as the main analytical-rigor narrative).
+Once that's done, submission is just sending the repo (link or zip) per the corrected instructions
+above - no PDF conversion step needed.
